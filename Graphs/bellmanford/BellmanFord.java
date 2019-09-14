@@ -72,9 +72,9 @@ public class BellmanFord {
 			sum += dist[v] - prev[v];
 		}
 		
-		if(sum == 0) {
+		if(sum != 0) {
 			System.out.println("There's a negative cycle!");
-			//return;
+			return;
 		}
 		
 		display();
